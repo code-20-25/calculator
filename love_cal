@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{
+margin: auto;
+border: 2px solid;
+width:50%;
+padding-left: 10px;
+}
+h4{
+text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h4>Love Calculator<h4>
+<p>Your Name:</p>
+<input type="text" placeholder="enter your name" id="name">
+<p>Friend's Name</p>
+<input type="text" placeholder="enter your partner's name" id="name1"><br><br>
+<input type="submit" value="Calculate" id="btn"><br>
+<h4>Result:</h4>
+<p id="demo"></p>
+
+</div>
+<script>
+let p = document.getElementById("demo");
+let text = document.getElementById("name");
+let text1 = document.getElementById("name1");
+let text2 = document.getElementById("btn");
+text2.addEventListener("click",()=>{
+p.innerHTML= text.value +" & "+ text1.value+" "+"have a compatibility of "+ (Math.floor(Math.random()*46)+40)+"%.";
+
+});
+</script>
+
+</body>
+</html>
